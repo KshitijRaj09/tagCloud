@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Courgette&display=swap');
+
+* {
+  box-sizing: border-box;
+  background-color: #f2f5ff;
+  font-family: 'Comfortaa', cursive;
+}
+
+/* App.js */
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea {
+  width: 80%;
+  border-radius: 10px;
+  padding: 5px;
+  height: 150px;
+  color: #111d13;
+  font-family: 'Courgette', cursive;
+  font-size: 20px;
+}
+
+button {
+  padding: 15px 8px;
+  margin: 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+/**************Word Cloud****************/
+
+.wordCloud {
+  padding: 25px;
+  margin-top: 7px;
+  width: 80%;
+  text-align: center;
+  border-radius: 20%;
+  border: 2px solid green;
+}
+
+.word-span {
+  position: relative;
+}
+
+.word-span .tooltip-text {
+  display: none;
+  width: 120px;
+  background-color: #003638;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 16px;
+  transform: rotate(0);
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 50px;
+  right: 10px;
+}
+
+.word-span:hover .tooltip-text {
+  display: inline;
+}
