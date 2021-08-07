@@ -12,15 +12,12 @@ function Wordcloud({ cloudWords }) {
           transform: `rotate(${(Math.random() - 0.5) * 50}deg)`,
           cursor: 'pointer'
         }}
-        onMouseOver={() => countShow(word[1])}
       >
         {word[0]}
         <span className="tooltip-text">Count {word[1]}</span>
       </span>
     ));
   }
-
-  function countShow(e) {}
 
   return (
     <>
